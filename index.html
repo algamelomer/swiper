@@ -26,70 +26,73 @@
         // Data for slides
         const slidesData = [{
             imgSrc: './images/01.jpg',
-            title: 'test'
+            title: 'day we met'
         }, {
             imgSrc: './images/02.jpg',
-            title: 'test'
+            title: 'second day after meeting each other 🥺<span style="color:red;">❤</span>'
+        }, {
+            imgSrc: './images/003.jpg',
+            title: '<span style="color:black;">Our favourite photo</span> 🙈<span style="color:red;">❤❤</span>'
         }, {
             imgSrc: './images/03.jpg',
-            title: 'test'
+            title: `was enjoying my day with you at Hayah karimah's event`
         }, {
             imgSrc: './images/04.jpg',
-            title: 'test'
+            title: 'celebrating your 1st birthday together🥳🥳<span style="color:red;">❤</span>'
         }, {
             imgSrc: './images/05.jpg',
-            title: 'test'
+            title: 'us 🥺👉👈'
         }, {
             imgSrc: './images/06.jpg',
-            title: 'test'
+            title: 'told you it was going to be a good photo 🙈'
         }, {
             imgSrc: './images/07.jpg',
-            title: 'test'
+            title: 'our 1st technie event with each other'
         }, {
             imgSrc: './images/08.jpg',
-            title: 'test'
+            title: 'i was really happy sitting next to you'
         }, {
             imgSrc: './images/09.jpg',
-            title: 'test'
+            title: 'عيني بتقول كل حاجة 🥺<span style="color:red;">❤</span>'
         }, {
             imgSrc: './images/010.jpg',
-            title: 'test'
+            title: 'real us 🥺👉👈'
         }, {
             imgSrc: './images/011.jpg',
-            title: 'test'
+            title: `insulting Dina at Hayah karimah's event`
         }, {
             imgSrc: './images/012.jpg',
-            title: 'test'
+            title: `chilling with each other at samir's birthday`
         }, {
             imgSrc: './images/013.jpg',
-            title: 'test'
+            title: 'our 1st picnic'
         }, {
             imgSrc: './images/014.jpg',
-            title: 'test'
+            title: 'our anniversary day🥳🥳'
         }, {
             imgSrc: './images/015.jpg',
-            title: 'test'
+            title: 'day 2 of our 🥳🥳'
         }, {
             imgSrc: './images/016.jpg',
-            title: 'test'
+            title: `trash jupiter academy's event but we were with each other`
         }, {
             imgSrc: './images/017.jpg',
-            title: 'test'
+            title: 'i hate really ziad😑'
         }, {
             imgSrc: './images/018.jpg',
-            title: 'test'
+            title: 'love you'
         }, {
             imgSrc: './images/019.jpg',
-            title: 'test'
+            title: 'us and i love you'
         }, {
             imgSrc: './images/020.jpg',
-            title: 'test'
+            title: 'the day i felt you have feelings for me'
         }, {
             imgSrc: './images/021.jpg',
-            title: 'test'
+            title: 'having fun with you is way important than the project 🙈'
         }, {
             imgSrc: './images/022.jpg',
-            title: 'test'
+            title: 'our graduation picture'
         }];
 
         // Get the swiper wrapper element
@@ -110,7 +113,7 @@
 
             const titleDiv = document.createElement('div');
             titleDiv.className = 'swiper-slide-title';
-            titleDiv.textContent = slide.title;
+            titleDiv.innerHTML = slide.title;
 
             // Assemble the slide
             contentDiv.appendChild(titleDiv);
