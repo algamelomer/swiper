@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaders Slider</title>
+    <script type="module" crossorigin src="assets/index.36aab0d1.js"></script>
+    <link rel="modulepreload" href="assets/vendor.315b6b96.js">
+    <link rel="stylesheet" href="assets/index.ec7dc4bf.css">
+</head>
+
+<body>
+    <!-- Shaders slider -->
+    <div class="swiper">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Slides will be inserted here -->
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script>
+        // Data for slides
+        const slidesData = [{
+            imgSrc: './images/01.jpg',
+            title: 'Spider-Man: No Way Home'
+        }, {
+            imgSrc: './images/02.jpg',
+            title: 'Free Guy'
+        }, {
+            imgSrc: './images/03.jpg',
+            title: 'The Nice Guys'
+        }, {
+            imgSrc: './images/04.jpg',
+            title: 'John Wick'
+        }, {
+            imgSrc: './images/05.jpg',
+            title: 'Avatar'
+        }];
+
+        // Get the swiper wrapper element
+        const swiperWrapper = document.getElementById('swiper-wrapper');
+
+        // Function to create and append slides
+        slidesData.forEach(slide => {
+            const slideElement = document.createElement('div');
+            slideElement.className = 'swiper-slide';
+
+            const imgElement = document.createElement('img');
+            imgElement.className = 'swiper-gl-image';
+            imgElement.src = slide.imgSrc;
+            imgElement.alt = '';
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'swiper-slide-content';
+
+            const titleDiv = document.createElement('div');
+            titleDiv.className = 'swiper-slide-title';
+            titleDiv.textContent = slide.title;
+
+            // Assemble the slide
+            contentDiv.appendChild(titleDiv);
+            slideElement.appendChild(imgElement);
+            slideElement.appendChild(contentDiv);
+            swiperWrapper.appendChild(slideElement);
+        });
+    </script>
+</body>
+
+</html>
